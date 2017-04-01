@@ -21,9 +21,8 @@ function insertion() {
   for(var i = 1; i < daten.length; i++) {
     if(daten[i] > daten[i-1]) { continue; }
     for(var comp = i-1; comp >= 0; comp--) {
-      if(daten[i] < daten[comp]) {
-        daten = daten.slice(0,comp-1).concat(daten[i]).concat(daten.slice(comp,i)).concat(daten.slice(i+1,daten.length));
-      }
+      tausche(comp,comp+1);
+      if(daten[comp-1] < daten[comp] || comp <= 0) { break; }
     }
   }
 }
