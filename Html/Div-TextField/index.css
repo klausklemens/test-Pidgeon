@@ -1,0 +1,20 @@
+﻿.textarea {
+  font-family: verdana;
+  overflow: auto;
+  
+  margin: 4px;
+  padding:5px;
+  border: 1px solid gray;
+  height: 150px;
+  width: 500px;
+  
+  transition: box-shadow 0.2s ease;
+}
+
+.textarea:focus {
+  box-shadow: 0px 0px 5px blue;
+}
+
+p:hover {
+  color:green;
+}
