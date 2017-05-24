@@ -1,3 +1,0 @@
-﻿function load() {
-  // Nothing in here...
-}
