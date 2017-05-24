@@ -3,9 +3,11 @@
 }
 
 var goty;
+var elemen;
 
-function submitty(da) {
+function submitty(da, es) {
   goty = da;
+  elemen = es;
   da.preventDefault();
   alert('hallo');
   
